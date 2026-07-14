@@ -160,7 +160,7 @@ export default function EcommerceHome({ onLogout }) {
 
   const addToCart = async (product) => {
     try {
-      const res = await fetch('http://localhost:5000/api/cart', {
+      const res = await fetch('https://companyproject1-eoqn.onrender.com/api/cart', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
